@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <!-- 공통 헤드-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--   <meta id="_csrf" name="_csrf" th:content="${_csrf.token}"/>
+       <meta id="_csrf_header" name="_csrf_header" th:content="${_csrf.headerName}"/>-->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
     <link th:href="@{/bootstrap/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet" type="text/css" />
     <link th:href="@{/bootstrap/css/sb-admin-2.css}" rel="stylesheet" type="text/css" />
@@ -30,7 +32,7 @@
 </div>
 
 <!-- 공통 스크립트-->
-    <!-- Bootstrap core JavaScript-->
+<!-- Bootstrap core JavaScript-->
 <script th:src="@{/bootstrap/vendor/jquery/jquery.min.js}"></script>
 <script th:src="@{/bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
 <!-- Core plugin JavaScript-->
